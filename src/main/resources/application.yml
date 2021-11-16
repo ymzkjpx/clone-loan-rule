@@ -11,3 +11,7 @@ spring:
       encoding: utf-8
   thymeleaf:
     cache: false
+mybatis:
+  configuration:
+    return-instance-for-empty-row: true
+    auto-mapping-unknown-column-behavior: failing

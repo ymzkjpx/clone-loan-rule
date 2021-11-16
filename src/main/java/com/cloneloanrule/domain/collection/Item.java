@@ -1,11 +1,11 @@
 package com.cloneloanrule.domain.collection;
 
 public class Item {
-    ItemNumber itemNumber;
+    ItemNumber 蔵書番号;
     Entry 蔵書;
 
-    public ItemNumber itemNumber() {
-        return itemNumber;
+    public ItemNumber 蔵書番号() {
+        return 蔵書番号;
     }
 
     public Entry 蔵書() {
@@ -15,8 +15,8 @@ public class Item {
     @Override
     public String toString() {
         return "Item{" +
-                "itemNumber=" + itemNumber +
-                ", entry=" + 蔵書 +
+                "蔵書番号=" + 蔵書番号 +
+                ", 蔵書=" + 蔵書 +
                 '}';
     }
 }

@@ -9,7 +9,7 @@ public class Entries {
     Entries() {
     }
 
-    public Entries(List<Entry> list) {
+    private Entries(List<Entry> list) {
         this.list = list;
     }
 
