@@ -9,17 +9,17 @@ import org.springframework.stereotype.Service;
 @Service
 public class CollectionService {
 
-    CollectionRepository 蔵書;
+    CollectionRepository collectionRepository;
 
-    public CollectionService(CollectionRepository 蔵書) {
-        this.蔵書 = 蔵書;
+    public CollectionService(CollectionRepository collectionRepository) {
+        this.collectionRepository = collectionRepository;
     }
 
-    public Entries 蔵書一覧(){
+    public Entries 蔵書一覧() {
         return 蔵書一覧();
     }
 
-    public Entry 蔵書(BookNumber bookNumber){
-        return null;
+    public Entry 蔵書(BookNumber 書籍番号) {
+        return collectionRepository.蔵書(書籍番号);
     }
 }
