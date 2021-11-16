@@ -1,4 +1,4 @@
-package com.cloneloanrule.domain.book;
+package com.cloneloanrule.domain.collection.book;
 
 /**
  * 書籍
