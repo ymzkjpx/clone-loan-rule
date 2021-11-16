@@ -1,5 +1,8 @@
 package com.cloneloanrule.domain.book;
 
+/**
+ * 書籍番号
+ */
 public class BookNumber {
     String value;
 
