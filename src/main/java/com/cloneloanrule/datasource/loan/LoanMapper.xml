@@ -20,6 +20,6 @@
                         INNER JOIN 蔵書.蔵書
                         ON (貸出.蔵書番号 = 蔵書.蔵書番号)
         WHERE
-                会員.会員番号 = #{value}
+                貸出.会員番号 = #{value}
     </select>
 </mapper>

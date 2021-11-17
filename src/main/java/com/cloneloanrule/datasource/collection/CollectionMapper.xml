@@ -17,9 +17,15 @@
         SELECT
                   書籍番号 AS "書籍.書籍番号.value"
                 , タイトル AS "書籍.タイトル"
-                , 著者 AS "書籍.タイトル"
+                , 著者 AS "書籍.著者"
         FROM 蔵書.品目
         ORDER BY
-                品目.書籍番号 ASC
+                品目.書籍番号
+    </select>
+
+    <select id="総蔵書品目数" resultType="int">
+        SELECT
+                COUNT(品目.書籍番号)
+        FROM 蔵書.品目
     </select>
 </mapper>

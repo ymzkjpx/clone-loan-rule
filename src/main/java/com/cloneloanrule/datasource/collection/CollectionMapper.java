@@ -13,4 +13,6 @@ public interface CollectionMapper {
     List<Entry> 蔵書一覧();
 
     Entry 蔵書(@Param("value") BookNumber bookNumber);
+
+    int 総蔵書品目数();
 }

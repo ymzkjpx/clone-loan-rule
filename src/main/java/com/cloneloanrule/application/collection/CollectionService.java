@@ -16,7 +16,7 @@ public class CollectionService {
     }
 
     public Entries 蔵書一覧() {
-        return 蔵書一覧();
+        return collectionRepository.蔵書一覧();
     }
 
     public Entry 蔵書(BookNumber 書籍番号) {
