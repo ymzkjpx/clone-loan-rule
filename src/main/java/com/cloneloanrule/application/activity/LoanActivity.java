@@ -6,6 +6,8 @@ import com.cloneloanrule.application.member.MemberService;
 import com.cloneloanrule.domain.collection.Entries;
 import com.cloneloanrule.domain.loan.LoanContext;
 import com.cloneloanrule.domain.loan.LoanHistory;
+import com.cloneloanrule.domain.loanability.Loanability;
+import com.cloneloanrule.domain.loanability.LoanabilityType;
 import com.cloneloanrule.domain.member.Member;
 import com.cloneloanrule.domain.member.MemberNumber;
 
@@ -32,4 +34,10 @@ public class LoanActivity {
     public Entries 蔵書一覧(){
         return collectionService.蔵書一覧();
     }
+
+    public LoanabilityType 貸出判断(LoanContext loanContext){
+        Loanability loanability = Loanability.of(loanContext);
+        return loanability.貸出判断();
+    }
+
 }
