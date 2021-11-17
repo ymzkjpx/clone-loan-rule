@@ -4,19 +4,17 @@ package com.cloneloanrule.domain.member;
  * 会員番号
  */
 public class MemberNumber {
-    String value;
+    int value;
 
     @Deprecated(since = "MyBatis")
     MemberNumber(){}
 
-    public String value() {
-        return value;
+    public MemberNumber(String value) {
+        this.value = Integer.parseInt(value);
     }
 
     @Override
     public String toString() {
-        return "MemberNumber{" +
-                "value='" + value + '\'' +
-                '}';
+        return String.valueOf(value);
     }
 }

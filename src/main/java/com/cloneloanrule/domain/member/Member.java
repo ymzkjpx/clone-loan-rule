@@ -4,12 +4,12 @@ package com.cloneloanrule.domain.member;
  * 会員
  */
 public class Member {
-    MemberNumber memberNumber;
+    MemberNumber 会員番号;
     String 氏名;
     MemberCategory 会員種別;
 
-    public MemberNumber memberNumber() {
-        return memberNumber;
+    public String 会員番号() {
+        return 会員番号.toString();
     }
 
     public MemberCategory 会員種別() {
@@ -19,7 +19,7 @@ public class Member {
     @Override
     public String toString() {
         return "Member{" +
-                "memberNumber=" + memberNumber +
+                "memberNumber=" + 会員番号 +
                 ", 氏名='" + 氏名 + '\'' +
                 ", 会員種別=" + 会員種別 +
                 '}';

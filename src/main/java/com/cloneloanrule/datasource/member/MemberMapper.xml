@@ -5,7 +5,7 @@
 <mapper namespace="com.cloneloanrule.datasource.member.MemberMapper">
     <select id="会員" resultType="com.cloneloanrule.domain.member.Member">
         SELECT
-                  会員番号 AS "memberNumber.value"
+                  会員番号 AS "会員番号.value"
                 , 氏名 AS "氏名"
                 , 会員種別 AS "会員種別"
         FROM
