@@ -25,19 +25,18 @@ public class LoanActivity {
         this.loanService = loanService;
     }
 
-    public LoanContext 貸出状況(MemberNumber 会員番号){
+    public LoanContext 貸出状況(MemberNumber 会員番号) {
         Member 会員 = memberService.会員(会員番号);
         LoanHistory 貸出履歴 = loanService.貸出履歴(会員番号);
         return LoanContext.of(会員, 貸出履歴);
     }
 
-    public Entries 蔵書一覧(){
+    public Entries 蔵書一覧(会員番号) {
         return collectionService.蔵書一覧();
     }
 
-    public LoanabilityType 貸出判断(LoanContext loanContext){
+    public LoanabilityType 貸出判断(LoanContext loanContext) {
         Loanability loanability = Loanability.of(loanContext);
         return loanability.貸出判断();
     }
-
 }
