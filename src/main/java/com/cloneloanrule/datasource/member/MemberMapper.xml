@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cloneloanrule.datasource.member.MemberMapper">
+    <select id="会員" resultType="com.cloneloanrule.domain.member.Member">
+        SELECT
+                  会員番号 AS "memberNumber.value"
+                , 氏名 AS "氏名"
+                , 会員種別 AS "会員種別"
+        FROM
+                会員.会員
+                        INNER JOIN 会員.会員種別
+                        ON (会員.会員種別 = 会員種別.名称)
+        WHERE
+                会員.会員番号 = #{value}
+    </select>
+</mapper>

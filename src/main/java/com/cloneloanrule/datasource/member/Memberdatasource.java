@@ -12,10 +12,12 @@ public class Memberdatasource implements MemberRepository {
 
     MemberMapper mapper;
 
-
+    public Memberdatasource(MemberMapper mapper) {
+        this.mapper = mapper;
+    }
 
     @Override
     public Member 会員(MemberNumber 会員番号) {
-        return mapper.member(会員番号);
+        return mapper.会員(会員番号);
     }
 }

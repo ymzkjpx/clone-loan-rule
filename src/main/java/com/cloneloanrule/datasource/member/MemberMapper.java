@@ -7,5 +7,5 @@ import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
 public interface MemberMapper {
-    Member member(MemberNumber memberNumber);
+    Member 会員(MemberNumber memberNumber);
 }
