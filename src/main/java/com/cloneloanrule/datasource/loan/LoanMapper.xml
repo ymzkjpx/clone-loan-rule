@@ -9,7 +9,7 @@
                      select="com.cloneloanrule.datasource.collection.CollectionMapper.蔵書"/>
     </resultMap>
 
-    <select id="貸出履歴>" resultMap="貸出履歴">
+    <select id="貸出履歴" resultMap="貸出履歴">
         SELECT
                   貸出.蔵書番号 AS "蔵書.蔵書番号.value"
                 , 会員番号 AS "会員.会員番号.value"
