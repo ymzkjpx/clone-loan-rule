@@ -14,7 +14,7 @@ public class MemberService {
         this.memberRepository = memberRepository;
     }
 
-    public Member 会員(MemberNumber 会員番号){
+    public Member 会員(MemberNumber 会員番号) {
         return memberRepository.会員(会員番号);
     }
 }

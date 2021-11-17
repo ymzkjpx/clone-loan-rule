@@ -31,7 +31,7 @@ public class LoanActivity {
         return LoanContext.of(会員, 貸出履歴);
     }
 
-    public Entries 蔵書一覧(会員番号) {
+    public Entries 蔵書一覧() {
         return collectionService.蔵書一覧();
     }
 

@@ -8,11 +8,11 @@ public class Book {
     String タイトル;
     String 著者;
 
-    public String description(){
-        return String.format("%s (%s)", タイトル,著者);
+    public String description() {
+        return String.format("%s (%s)", タイトル, 著者);
     }
 
-    public BookNumber number(){
+    public BookNumber number() {
         return 書籍番号;
     }
 

@@ -45,14 +45,14 @@ public class LoanController {
     String 貸出可否(
             @PathVariable MemberNumber 会員番号,
             @RequestParam("bookNumber") BookNumber bookNumber,
-            Model model ){
+            Model model) {
         LoanContext loanContext = loanActivity.貸出状況(会員番号);
         Entries entries = loanActivity.蔵書一覧();
         model.addAttribute("loanContext", loanContext);
         model.addAttribute("entries", entries);
 
         Loanability loanability = Loanability.of(loanContext);
-        model.addAttribute("LoanabilityType" , loanability);
+        model.addAttribute("LoanabilityType", loanability);
         return "loan/context";
     }
 }

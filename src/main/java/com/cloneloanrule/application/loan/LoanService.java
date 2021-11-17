@@ -13,7 +13,7 @@ public class LoanService {
         this.loanRepository = loanRepository;
     }
 
-    public LoanHistory 貸出履歴(MemberNumber 会員番号){
+    public LoanHistory 貸出履歴(MemberNumber 会員番号) {
         return loanRepository.貸出履歴(会員番号);
     }
 }

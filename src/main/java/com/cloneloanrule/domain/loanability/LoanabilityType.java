@@ -5,5 +5,5 @@ package com.cloneloanrule.domain.loanability;
  */
 public enum LoanabilityType {
     貸出可能,
-    貸出不可;
+    貸出不可
 }

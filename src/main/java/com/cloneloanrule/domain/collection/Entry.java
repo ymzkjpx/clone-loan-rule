@@ -9,11 +9,11 @@ import com.cloneloanrule.domain.collection.book.BookNumber;
 public class Entry {
     Book 書籍;
 
-    public String description(){
+    public String description() {
         return 書籍.description();
     }
 
-    public BookNumber number(){
+    public BookNumber number() {
         return 書籍.number();
     }
 
